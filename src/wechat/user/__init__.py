@@ -1,12 +1,6 @@
-from flask import Blueprint, request
+from flask import Blueprint
 
-index_blu = Blueprint('index', __name__, url_prefix='/')
-
-
-@index_blu.before_request
-def index_before_request():
-    urla = request.url
-    print(urla, ' is the url where now get!', end='/n')
+user_blu = Blueprint('user', __name__, url_prefix='/user/')
 
 
-from . import index
+from . import views

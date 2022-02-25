@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+/src/wechat/dynamic/images_file/
+/src/migrations
+*.xml
